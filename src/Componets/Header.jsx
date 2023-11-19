@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-
+import logo3 from "./../assets/Images/logo3.png";
 
 import SideNavGenreList from "./SideNavGenreList";
 import { HiMoon, HiOutlineBars3CenterLeft, HiOutlineMagnifyingGlass, HiOutlineXMark, HiSun } from "react-icons/hi2";
@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <div className="flex items-center p-3">
-      <img src="https://i.etsystatic.com/46684264/r/il/8ef4d7/5324060225/il_340x270.5324060225_qp6w.jpg" width={50} height={50} className="hidden md:block" />
+      <img src={logo3} width={50} height={50} className="hidden md:block" />
       <div className="md:hidden">
       {!toggle? <HiOutlineBars3CenterLeft onClick={()=>setToggle(!toggle)}
       className="dark:text-white text-[25px] cursor-pointer"/>
